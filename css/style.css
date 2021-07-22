@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color:#C8A47E;
+}
+body {
+    background-color: var(--primary-color);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+/*************** utilities **************/ 
+.container {
+    margin: 0 70px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+.primary-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    padding: 20px 40px;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/*************** landing **************/ 
+#landing {
+    height: 100vh;
+    background: url(../img/landing.jpg) no-repeat center center/cover;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+#landing .navbar {
+    padding: 20px 0;
+    position: fixed;
+    z-index: 10;
+}
+#landing .navbar a {
+    color: white;
+    font-size: 20px;
+}
+#landing .navbar .primary-btn {
+    color: black;
+    font-size: 20px;
+}
+#landing .navbar ul li {
+    padding: 20px;
+    transition: 0.5s;
+}
+#landing .navbar ul li:hover {
+    background: var(--primary-color);
+}
+#landing .navbar .icons li:hover i {
+    transform: rotateY(180deg);
+}
+#landing .navbar .icons li i {
+    transition: 0.5s;
+}
+.logo {
+    text-align: center;
+}
+.logo  img {
+    width: 30%;
+}
+#landing .landing-text {
+    position: absolute;
+    top: 300px;
+    left: -0;
+    text-align: center;
+    padding: 0 250px;
+}
+#landing .landing-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 69px;
+    color: white;
+}
+/*************** vibes **************/ 
+#vibe {
+    background: black;
+    color: white;
+    padding-bottom: 50px;
+}
+#vibe .vibe-text {
+    text-align: center;
+    padding: 50px;
+}
+#vibe .vibe-text h1 {
+    font-size: 43px;
+    margin: 50pxpx 0;
+}
+#vibe .vibe-text p {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 400;
+    padding: 0 100px;
+    margin: 50px 0;
+}
+#vibe .vibe-text .btn {
+    margin: 55px 0;
+}
+#vibe .container hr {
+    border: none;
+    height: 2px;
+    background: white;
+}
+#vibe .contact {
+    margin: 20px 0;
+}
+#vibe .contact .grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#vibe .contact .grid > div {
+    text-align: center;
+}
+#vibe .contact .grid > div h1 {
+    text-transform: capitalize;
+    font-size: 43px;
+    font-weight: 700;
+}
+#vibe .contact .grid > div p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+#vibe .contact .grid .contact-us p {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+#vibe .contact .grid .location p {
+    text-transform: capitalize;
+}
+
+/*************** waiting room **************/ 
+
+#waiting-room {
+    background: url(../img/waiting.jpg)no-repeat center  center/cover ;
+    height: 100vh;
+    background-color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+/*************** menu **************/ 
+
+#menu .title h1 {
+    text-align: center;
+    font-size: 60px;
+}
+#menu .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+#menu .prices {
+    text-align: center;
+}
+#menu .prices h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+#menu .prices p{
+    padding:  20px;
+    font-size: 19px;
+}
+#menu .btn {
+    text-align: center;
+    margin: 50px 0;
+}
+#menu .btn .primary-btn {
+    background: black;
+    color: var(--primary-color);
+}
+
+/*************** follow **************/ 
+
+#follow {
+    padding: 50px 0;
+    background: #0B0F54;
+}
+#follow .title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+#follow .grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#follow .grid img {
+    width: 355px;
+    height: 355px;
+}
+/*************** menu **************/ 
+#contact {
+    background: black;
+    padding: 50px 0;
+}
+#contact .grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+#contact .grid .flex-c img {
+    width: 80%;
+}
+#contact .grid .flex-c i {
+    color: white;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 19px;
+    font-weight: 400;
+}
+#contact .grid .flex-c a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+#contact .grid .flex-c h4{
+    color: white;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+#contact .grid .flex-c p{
+    color: white;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
